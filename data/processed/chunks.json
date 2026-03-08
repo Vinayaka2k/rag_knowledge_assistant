@@ -1,0 +1,26 @@
+[
+  {
+    "chunk_id": "mfa_reset_runbook_chunk_0",
+    "text": "MFA Reset Procedure\n\nIf a user is locked out after changing or losing their phone, follow these steps:\n\n1. Verify the user's identity using the registered email and employee ID.\n2. In the admin console, navigate to Security > Authentication > MFA Settings.\n3. Locate the user account and click 'Reset MFA'.\n4. Ask the user to log in again and enroll a new authentication device.\n5. Document the reset action in the support ticket system.\n\nCommon issues:\n- User cannot access backup codes.\n- User changed phone number but did not update MFA settings.",
+    "source": "mfa_reset_runbook.txt",
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "password_reset_guide_chunk_0",
+    "text": "Password Reset Guide\n\nIf a user cannot log into their account due to a forgotten password:\n\n1. Direct the user to the password reset page.\n2. The user should enter their registered email address.\n3. A reset link will be sent to the email.\n4. The link expires after 30 minutes.\n5. If the user does not receive the email, verify the spam folder.\n\nSecurity Note:\nNever manually set passwords for users unless authorized by the security team.",
+    "source": "password_reset_guide.txt",
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "refund_policy_chunk_0",
+    "text": "# Refund Policy\n\nCustomers may request refunds under the following conditions:\n\n1. The request is made within 30 days of purchase.\n2. The product has not been significantly used.\n3. Subscription services can be prorated.\n\nRefund processing steps:\n\n1. Verify the purchase ID.\n2. Confirm the request falls within the refund window.\n3. Issue refund through the billing portal.\n4. Notify the customer via email.",
+    "source": "refund_policy.md",
+    "chunk_index": 0
+  },
+  {
+    "chunk_id": "support_escalation_policy_chunk_0",
+    "text": "# Support Escalation Policy\n\nCertain issues require escalation to Tier 2 or Tier 3 engineering teams.\n\n## Escalate immediately if:\n\n- The issue affects more than 50 users\n- Production systems are down\n- Security vulnerabilities are suspected\n\n## Tier 2 escalation examples\n\n- Persistent authentication failures\n- MFA reset issues not resolved by standard procedure\n- Database connection errors\n\n## Tier 3 escalation examples\n\n- Data corruption\n- Infrastructure outages",
+    "source": "support_escalation_policy.md",
+    "chunk_index": 0
+  }
+]

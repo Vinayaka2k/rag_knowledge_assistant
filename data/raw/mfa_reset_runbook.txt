@@ -1,0 +1,13 @@
+MFA Reset Procedure
+
+If a user is locked out after changing or losing their phone, follow these steps:
+
+1. Verify the user's identity using the registered email and employee ID.
+2. In the admin console, navigate to Security > Authentication > MFA Settings.
+3. Locate the user account and click 'Reset MFA'.
+4. Ask the user to log in again and enroll a new authentication device.
+5. Document the reset action in the support ticket system.
+
+Common issues:
+- User cannot access backup codes.
+- User changed phone number but did not update MFA settings.
