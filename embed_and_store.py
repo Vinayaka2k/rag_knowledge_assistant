@@ -4,10 +4,12 @@ import os
 import uuid
 from pathlib import Path
 from typing import Any, Dict, List
+
 import google.generativeai as genai
 from qdrant_client import QDrantClient
 from qdrant_client.models import Distance, PointStruct, VectorParams
-
+from dotenv import load_dotenv
+load_dotenv()
 CHUNKS_FILE = Path("/data/processed/chunks.json")
 QDRANT_HOST = "localhost"
 QDRANT_PORT = 6333
