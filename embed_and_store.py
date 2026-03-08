@@ -75,7 +75,7 @@ def main():
     print("Embedding dimension:", vector_size)
 
     print("Connecting to Qdrant...")
-    qdrant = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
+    qdrant = QdrantClient(path="qdrant_data")
 
     print("Creating collection...")
     recreate_collection(qdrant, vector_size)
