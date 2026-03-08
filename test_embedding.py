@@ -1,13 +1,25 @@
 import os
-from dotenv import dotenv
+from dotenv import load_dotenv
 from google import genai
-load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-text = "How did i reset MFA after losing my phine?"
-response = genai.embed_content(model = "models/embedding-001",
-content = text,
-task_type = "retrieval_query")
+from google.genai import types
 
-embedding = response["embedding"]
-print("Embedding length: " , len(embedding))
-print("First 10 values: ", embedding[:10])
+load_dotenv()
+
+# Create Gemini client
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+text = "How did I reset MFA after losing my phone?"
+
+# Generate embedding
+response = client.models.embed_content(
+    model="gemini-embedding-001",
+    contents=[text],
+    config=types.EmbedContentConfig(
+        task_type="RETRIEVAL_QUERY"
+    ),
+)
+
+embedding = response.embeddings[0].values
+
+print("Embedding length:", len(embedding))
+print("First 10 values:", embedding[:10])
